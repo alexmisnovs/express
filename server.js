@@ -78,6 +78,12 @@ app.get('/json', (req, res) => {
         res.send(obj);
     
     });
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        content: "<p>This is the projects page content</p>"
+    });
+});
+
 
 app.get('/bad', (req, res) => {
     var error = {
