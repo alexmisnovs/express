@@ -27,14 +27,16 @@ app.use((req, res, next) => {
 
     next();
 });
-app.use((req, res, next) => {
+
+// app.use((req, res, next) => {
     
-    res.render('underconstruction.hbs', {
-        pageTitle: 'Under Construction',
-        message: 'Site will be back up shortly',
-        array: [1, 2, 3, 4, 5, 6, 7]
-    });
-});
+//     res.render('underconstruction.hbs', {
+//         pageTitle: 'Under Construction',
+//         message: 'Site will be back up shortly',
+//         array: [1, 2, 3, 4, 5, 6, 7]
+//     });
+// });
+
 
 app.use(express.static(__dirname + '/public'));
 
